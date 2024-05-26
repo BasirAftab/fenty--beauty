@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.{
+   margin: 0;
+   padding: 0;
+   transition:.2s linear;
+}
+.main{
+   font-style: italic;
+}
+.gridcontainer{
+   background-color: #6b67671c;
+   padding: 15px 9px;
+
+}
+.gridcontainer .boxContainer{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap:100px;
+   margin: 23px;
+   
+}
+
+
+/* section two */
+
+.boxContainer{
+   display: flex;
+}
+.sectionbox{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-columns: 1/2;
+      gap:15px;
+
+}
+/* section three */
+.sectionthree{
+   background-color: rgba(138, 150, 163, 0.215);
+}
+.bannerimage01{
+   background-image: url('./Asseset/banner02.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 60vh;
+   
+}
+.bannerimage01 .bannerimageheading{
+   color: white;
+   background-color: rgba(35, 98, 193, 0.29);
+   height: 250px;
+   width: 250px;
+   text-align: center;
+   align-content: center;
+}
+/* fourth container */
+.fourcontainer{
+   padding: 15px 9px;
+   background-color: #6b67671c;
+}
+.fourcontainer .fourbox{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: 1/2;
+      gap:30px;
+
+}
+
+.fourcontainer .div01{
+   background-image: url('./Asseset/image12.png');
+}
+
+.fourcontainer .div02{
+   background-image: url('./Asseset/image13.png');
+}
+
+.fourcontainer .div03{
+   background-image: url('./Asseset/image14.png');
+   height:500px ;
+}
+
+
+
+
+.btn{
+   background-color:#d3cbc4;
+}
+
+/* hover images effect  */
+
+
+
+
+/* footer */
+.footer{
+   height:60vh;
+   background-color: rgba(44, 43, 43, 0.963);
+}
+
+.footer .footercontainer{
+   margin-left: 550px;
+}
+
+
+
+/* responsive design */
+.hamburger{
+   display: none;
+}
+@media (max-width: 1200px) {
+   .h1, 
+   .pkicon{
+      display: none;
+      
+   }
+
+   .mainheading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+}
+.mainheading{
+   font-style: italic;
+}
+
+@media (max-width:994px){
+   .mainheading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   .h2{
+     margin: 200px;
+   }
+   .maincontainer .banner01img{
+      display: none;
+   }
+}
+
+@media (max-width: 980px){
+   .mainheading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   .h2{
+      margin: 200px;
+    }
+
+}
+
+@media (max-width:1016px) {
+   .h2{
+      margin: 200px;
+    }
+   
+}
+
+@media (max-width:1022px) {
+   .h2{
+      margin: 200px;
+    }
+   
+}
+
+
+@media (max-width: 996px){
+   .h2{
+      margin:200px;
+   }
+
+
+}
+
+@media (max-width: 664px){
+   .h2{
+      margin:100px;
+   }
+}
+
+@media (max-width: 462px){
+   .h2{
+      margin:50px;
+   }
+   .navicons{
+      display: none;
+   }
+}
+
+@media (max-width:412px) {
+
+   .sectionthree{
+      width:412px;
+      display: none;
+      height: 12vh;
+   }
+   .fourcontainer{
+      display: none;
+      flex-direction: column;
+   }
+
+   .hamburger{
+      display: block;
+      margin-right: 12px;
+   }
+ 
+}
